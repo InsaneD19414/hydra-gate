@@ -27,7 +27,7 @@ smuggling, malformed or missing policy files, and audit-log tampering.
 ```bash
 pip install -e ".[dev]"
 pytest -q
-python examples/demo.py
+python examples/demo.py      # also runs from a fresh checkout without installing
 ```
 
 ```python
@@ -54,10 +54,16 @@ gate = Gate.from_policy_file("policy.json", audit=AuditLog("audit.jsonl", chain=
 ```
 
 ```json
-{"tools": {"transfer": {"args": {
-  "to":     {"type": "str", "pattern": "acct_[0-9]{6}"},
-  "amount": {"type": "number", "min": 0.01, "max": 100}
-}}}}
+{
+  "tools": {
+    "transfer": {
+      "args": {
+        "to":     {"type": "str", "pattern": "acct_[0-9]{6}"},
+        "amount": {"type": "number", "min": 0.01, "max": 100}
+      }
+    }
+  }
+}
 ```
 
 ## Using it with MCP servers

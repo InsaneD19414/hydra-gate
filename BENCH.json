@@ -1,0 +1,24 @@
+{
+  "environment": {
+    "python": "3.13.5",
+    "implementation": "CPython",
+    "platform": "Linux-6.12.94+-x86_64-with-glibc2.41",
+    "cpu_model": "Intel(R) Xeon(R) Processor",
+    "logical_cpus": 8,
+    "measured_at_utc": "2026-10-08T06:57:09+00:00"
+  },
+  "results": {
+    "no_audit": {
+      "n": 50000,
+      "median_ms": 0.0024,
+      "p99_ms": 0.0053,
+      "mean_ms": 0.0027
+    },
+    "chained_audit_log": {
+      "n": 50000,
+      "median_ms": 0.027,
+      "p99_ms": 0.0522,
+      "mean_ms": 0.03
+    }
+  }
+}

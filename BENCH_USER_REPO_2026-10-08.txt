@@ -1,0 +1,5 @@
+Run by Grok Bot on 2026-10-08 ~01:53 CT, on the user's hydra-gate zip as uploaded (unmodified).
+pytest -q: 21 passed in 0.05s
+benchmarks/bench_latency.py: python 3.13.5 on Linux-6.12.94+-x86_64-with-glibc2.41
+n=50000 median=0.0025 ms  p99=0.0088 ms
+CPU: Intel(R) Xeon(R) Processor (cloud VM)
